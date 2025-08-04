@@ -1,0 +1,48 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title{
+    background-color: rgb(252, 0, 147);
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+}
+.title span{
+    color: gold;
+}
+.grids > div{
+    background-color: rgb(252, 0, 147);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    color: white;
+}
+.grids>div:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,226.66px);
+    gap: 10px;
+    height: 700px;
+}
+
+.black{
+    background-color: black !important;
+}
